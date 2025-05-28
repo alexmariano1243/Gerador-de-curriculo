@@ -4,7 +4,7 @@
 Este é um projeto de um **Gerador de Currículo** simples desenvolvido com **HTML**, **CSS**, **JavaScript** e **PHP**. O sistema permite que o usuário preencha suas informações, valide os dados e visualize o currículo gerado, com possibilidade de salvá-lo.
 
 
-## 📄 Descrição dos Arquivos
+## Descrição dos Arquivos
 
 - **index.html**  
   Página inicial do projeto com link para iniciar o preenchimento do currículo.
@@ -28,14 +28,14 @@ Este é um projeto de um **Gerador de Currículo** simples desenvolvido com **HT
   - **inicio.css**: Estilo da página inicial.  
   - **resultado.css**: Estilo da página de exibição do currículo.
 
-## ✅ Funcionalidades
+## Funcionalidades
 
 - Preenchimento de informações pessoais, formação, experiência e habilidades.
 - Validação de dados via JavaScript.
 - Processamento e exibição dinâmica do currículo com PHP.
 - Organização modular de estilos e scripts.
 
-## 🚀 Como usar
+## Como usar
 
 1. Clone o repositório:
    ```bash
