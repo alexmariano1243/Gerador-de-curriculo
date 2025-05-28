@@ -1,0 +1,208 @@
+body{
+    background-color: #5E64D6;
+    z-index: 0;
+}
+
+#coloqueinformaçoes{
+    position: top;
+    z-index: 2;
+    color: #FFFFFF;
+    left: 20px;
+    top: 10px;
+    font-size: 40px;
+}
+    
+#dadospessoais{
+    position: center;
+    z-index: 2;
+    color: #FFFFFF;
+    left: 20px;
+    top: 100px;
+    font-size: 40px;
+    font:comic;
+}
+
+#nomenome{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#nome{
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#telefonetelefone{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#telefone{
+    font-size: 20px;
+    border-radius: 20px;
+    
+}
+
+#cidadecidade{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#cidade{
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#estadoestado{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#estado{
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#enderecoendereco{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#endereco{
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#emailemail{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#email{
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#datadata{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#dataNascimento{
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#idadeidade{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+#idade{
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#objetivosobjetivos{
+    z-index: 2;
+    color: #FFFFFF;
+    left: 20px;
+    top: 10px;
+    font-size: 40px;
+}
+
+#objetivos{
+    z-index: 2;
+    font-size: 40px;
+    border-radius: 30px;
+    width: 1500px;
+    height: 200px;
+}
+
+#formacoesformacoes{
+    z-index: 2;
+    color: #FFFFFF;
+    left: 20px;
+    top: 10px;
+    font-size: 40px;
+}
+
+#addFormacao{
+    font-size: 30px;
+    border-radius: 100px;
+    width: 40px;
+
+}
+
+#addExperiencia{
+    font-size: 30px;
+    border-radius: 100px;
+    width: 40px;
+}
+
+#experienciaexperiencia{
+    font-size: 30px;
+    border-radius: 100px;
+    color: #FFFFFF;
+}
+
+.remover-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formacao-item label,
+.experiencia-item label {
+  font-weight: bold;
+  color: #333;
+  
+}
+
+.formacao-item input,
+.experiencia-item input {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  
+}
+
+.formacao-item input,
+.experiencia-item input {
+  width: 85%;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-size: 30px;
+  
+}
+
+
+#formulario input[type="submit"] {
+  background-color:#3443AF; 
+  color: white;
+  width: 200px;
+  height: 70px;
+  border-radius: 50px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+#formacoes label,
+#experiencias label {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Informações do Currículo</title>
+</head>
+<link rel="stylesheet" href="Css/informações.css">
+
+<body>
+
+  <h1 id="coloqueinformaçoes">Coloque suas informações</h1>
+
+  <form action="salvar.php" method="post" id="formulario">
+
+    <h3 id="dadospessoais">Dados Pessoais</h3>
+    
+    <label id="nomenome">Nome:</label>
+    <input type="text" name="nome" id="nome" placeholder="Nome...">
+
+    <label id="telefonetelefone">Telefone:</label>
+    <input type="tel" name="telefone" id="telefone">
+
+    <label id="cidadecidade">Cidade:</label>
+    <input type="text" name="cidade" id="cidade">
+
+    <label id="estadoestado">Estado:</label>
+    <input type="text" name="estado" id="estado"><br><br>
+
+    <label id="enderecoendereco">Endereço:</label>
+    <input type="text" name="endereco" id="endereco" placeholder="Rua...">
+
+    <label id="emailemail">Email:</label>
+    <input type="email" name="email" id="email">
+
+    <label id="datadata">Data de Nascimento:</label>
+    <input type="date" name="dataNascimento" id="dataNascimento">
+
+    <label id="idadeidade">Idade:</label>
+    <input type="text" name="idade" id="idade" readonly><br><br>
+   
+    <h3 id="objetivosobjetivos">Objetivos</h3>
+    <textarea name="objetivos" id="objetivos"></textarea><br><br>
+
+    <h3 id="formacoesformacoes">Formações</h3>
+    <div id="formacoes"></div>
+    <button type="button" id="addFormacao">+</button><br><br>
+
+    <h3 id="experienciaexperiencia">Experiências Profissionais</h3>
+    <div id="experiencias"></div>
+    <button type="button" id="addExperiencia">+</button><br><br>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+
+  <script>
+
+  document.getElementById('dataNascimento').addEventListener('change', function() {
+    const nascimento = new Date(this.value);
+    const hoje = new Date();
+    let idade = hoje.getFullYear() - nascimento.getFullYear();
+    const m = hoje.getMonth() - nascimento.getMonth();
+    if (m < 0 || (m === 0 && hoje.getDate() < nascimento.getDate())) {
+      idade--;
+    }
+    document.getElementById('idade').value = idade;
+  });
+
+  document.getElementById('addFormacao').addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.classList.add('formacao-item');
+    div.innerHTML = `
+      <label>Instituição:</label>
+      <input type="text" name="formacoes[][instituicao]">
+      <label>Curso:</label>
+      <input type="text" name="formacoes[][curso]">
+      <label>Data Início:</label>
+      <input type="date" name="formacoes[][inicio]">
+      <label>Data Fim:</label>
+      <input type="date" name="formacoes[][fim]">
+      <button type="button" class="remover-btn">Remover</button><br><br>
+    `;
+    div.querySelector('.remover-btn').addEventListener('click', function() {
+      div.remove();
+    });
+    document.getElementById('formacoes').appendChild(div);
+  });
+
+  document.getElementById('addExperiencia').addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.classList.add('experiencia-item');
+    div.innerHTML = `
+      <label>Empresa:</label>
+      <input type="text" name="experiencias[][empresa]">
+      <label>Cargo:</label>
+      <input type="text" name="experiencias[][cargo]">
+      <label>Data Início:</label>
+      <input type="date" name="experiencias[][inicio]">
+      <label>Data Fim:</label>
+      <input type="date" name="experiencias[][fim]">
+      <button type="button" class="remover-btn">Remover</button><br><br>
+    `;
+    div.querySelector('.remover-btn').addEventListener('click', function() {
+      div.remove();
+    });
+    document.getElementById('experiencias').appendChild(div);
+  });
+</script>
+
+  <script src="validacao.js"></script>
+
+</body>
+</html>
+>
